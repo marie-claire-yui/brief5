@@ -41,3 +41,4 @@ values (1,200,"fitness park",1,2),(2,250,"mario world",2,1),(3,450,"skyrim",3,1)
 insert into coordonnees(coordonnees_id,adresse_complete,telephone,mail_sportif,membre_id,medecin_id,club_id,numero_assure)
 values(1,"14 parc saint exupery 06100 NICE","0615721337","kasai.mcyui@gmail.com",1,1,1,67),(2,"666 roads of the devil London England","443215721337","helloworld@gmail.com",2,1,1,54),(3,"39 Straße Dusseldorf Franckfurt Allemagne","56715721337","eden.ging@gmail.com",3,1,4,79),(4,"33 Via Ferrata Italia","32567157217","lucibello@gmail.com",4,2,3,28),(5,"1346  avenida Dos Santos","48715778337","undostres@gmail.com",5,3,2,801);
 -- checked
+-- test
