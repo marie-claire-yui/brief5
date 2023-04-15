@@ -10,8 +10,8 @@ insert into salles(salle_id,type_activites,reserve)
 values(1,1,1),(2,1,1),(3,2,1),(4,2,0),(5,3,0);
 -- checked
 
-insert into abonnement(abonnement_id,id_type_abo,acces_tous_clubs,acces_toutes_salles,activites_collectives,coach)
-values(1,1,0,0,0,0),(2,2,0,0,1,0),(3,3,1,0,0,1),(4,4,0,1,1,0),(5,5,1,0,1,1);
+insert into abonnement(abonnement_id,id_type_abo,acces_tous_clubs,acces_toutes_salles,activites_collectives,coach,facture_abonnement)
+values(1,1,0,0,0,0,200),(2,2,0,0,1,0,175),(3,3,1,0,0,1,150),(4,4,0,1,1,0,150),(5,5,1,0,1,1,100);
  -- checked
 
 insert into medecin(medecin_id, certificat_medical, nom_medecin)
@@ -27,7 +27,7 @@ values(1,"Jean","Michel",1,1,67),(2,"Polopoff","Pierre",1,2,54),(3,"Davidoff","M
 -- checked 
 
 insert into caisses(caisse_id,facture_magasin,facture_abonnement,montant_total,membre_id)
-values (1, 40,35,75,1),(2, 75,35,110,2),(3, 20,35,55,3),(4,0,35,35,4),(5, 15,35,50,5);
+values (1, 40,200,240,1),(2, 75,175,250,2),(3, 20,150,170,3),(4,0,150,150,4),(5, 15,100,115,5);
 -- checked
 
 insert into  magasin(magasin_id,nrj_drinks,antalgiques,facture_magasin,outfit,membre_id)
