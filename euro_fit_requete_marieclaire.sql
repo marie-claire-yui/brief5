@@ -43,11 +43,29 @@
  
  
  -- sélectionne le nombre de patients/membres par médecin dont le nombre de patient par médecin est supérieur strcitement à 2
---  select count(nom) as nombre_de_membres_patient, nom_medecin from membres
---  join medecin on membres.medecin_id = medecin.medecin_id
---  group by nom_medecin
+ -- select count(nom) as nombre_de_membres_patient, nom_medecin from membres
+ -- join medecin on membres.medecin_id = medecin.medecin_id
+ -- group by nom_medecin
 -- having nombre_de_membres_patient > 2;
  
+-- CREATE OR REPLACE VIEW tests AS
+-- SELECT membres.nom, membres.prenom, coordonnees.adresse_complete,nom_medecin  FROM membres 
+-- JOIN medecin USING(medecin_id)
+-- JOIN coordonnees USING(membre_id)
+-- ;
 
+-- select * from tests;
 
+-- ALTER VIEW tests AS
+-- SELECT  membres.nom, membres.prenom, coordonnees.adresse_complete,nom_medecin, montant_total  FROM membres 
+-- JOIN medecin USING(medecin_id)
+-- JOIN coordonnees USING(membre_id)
+-- join caisses USING (membre_id)
+-- ;
+
+-- select * from tests;
+
+-- DROP VIEW tests;
+
+-- select * from tests;
 
